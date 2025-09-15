@@ -5,7 +5,7 @@ Check out the original [REPO here](https://github.com/cgolden15/tetris) and orig
 ## How to play:
 * Step 1. Download the Repo
 * Step 2. Unzip it
-* Step 3. Launch Index.Html
+* Step 3. Launch [Index.html](index.html)
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/61284764/154609080-7dc112c4-e174-4a02-bf28-7b670019c8dc.png)
