@@ -1,4 +1,8 @@
 # Tetris ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2Fcgolden15%2Ftetris%2Ftree%2Fmain&label=Visits&icon=github&color=%23198754&message=&style=flat&tz=US%2FEastern)
+
+Check out the original [REPO here](https://github.com/cgolden15/tetris)
+
+
 Robust version of Twitch Tetris. Created to bypass school blocks &amp; to add a few updates of my own. To host yourself, just clone the repo and publish to github pages or fork it as a repl.
 
 
