@@ -11,3 +11,5 @@ Check out the original [REPO here](https://github.com/cgolden15/tetris) and orig
 ![image](https://user-images.githubusercontent.com/61284764/154609080-7dc112c4-e174-4a02-bf28-7b670019c8dc.png)
 ![image](https://user-images.githubusercontent.com/61284764/154609127-860ddd1c-3500-4b4f-89bd-0c8e13876cde.png)
 
+### Note:
+*This repo has been very ***slightly*** changed to work in about:blank so everyone can play*
