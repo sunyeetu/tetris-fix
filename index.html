@@ -1,3 +1,11 @@
+<!doctype html>
+<html>
+<body>
+<script>
+(function(){
+  // 🔽 Put your HTML code here (everything between the backticks will be injected into about:blank)
+  const injectedHTML = `
+
 <html>
   <head>
     <title>Tetris</title>
@@ -5,30 +13,30 @@
 
     <link href="styles.css" rel="stylesheet" type="text/css" />
 
-    <script src="cookie.js"></script>
-    <script src="tetris_main.js"></script>
+    <script src="cookie.js"><\/script>
+    <script src="tetris_main.js"><\/script>
     <!-- Clicky Stats -->	  
-    <script async src="//static.getclicky.com/101393847.js"></script>
+    <script async src="//static.getclicky.com/101393847.js"><\/script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101393847ns.gif" /></p></noscript>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK89TJWE9G"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK89TJWE9G"><\/script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'G-SK89TJWE9G');
-    </script>
+    <\/script>
     <!-- Adsense -->
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8024356722027062"
-     crossorigin="anonymous"></script>
+     crossorigin="anonymous"><\/script>
     <script>
       function onClickEvent(event){
       if (Tetris.currentInstance) {
       Tetris.currentInstance.mouseClicked(event.layerX, event.layerY);
       }
       }
-    </script>
+    <\/script>
     <style>
         .alert {
           padding: 20px;
@@ -149,7 +157,31 @@
 	<td width="20"> </td>
       </tr>
     </table>
-    <script async src="//static.getclicky.com/101357250.js"></script>
+    <script async src="//static.getclicky.com/101357250.js"><\/script>
     <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101357250ns.gif" /></p></noscript>
   </body>
+</html>
+`;
+
+  function openAndInject(){
+    const w = window.open('about:blank','injected_blank');
+    if(w){
+      w.document.open();
+      w.document.write(injectedHTML);
+      w.document.close();
+      w.focus();
+    } else {
+      // fallback if popup blocked → replace current page
+      document.open();
+      document.write(injectedHTML);
+      document.close();
+    }
+    // instantly close the launcher
+    window.close();
+  }
+
+  window.addEventListener('load', openAndInject);
+})();
+</script>
+</body>
 </html>
